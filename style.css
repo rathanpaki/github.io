@@ -1,0 +1,100 @@
+/* Stylesheet for Portfolio */
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+    background-color: #2e3944 !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.blink-glow {
+    color: #fff;
+    animation: blink-glow 1.5s linear infinite;
+}
+
+.btn-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    background: #2e3944;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.btn-glow:hover {
+    background-color: #1a202c;
+}
+
+.img-glow {
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.6);
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+.about-project {
+    background-color: #2e3944;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.view {
+    margin-top: 10px;
+    color: #fff;
+    background-color: #2e3944;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.view:hover {
+    background-color: #1a202c;
+}
+
+.section-title h2 {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #2e3944;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes blink-glow {
+    0%, 100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #f0f, 0 0 50px #f0f, 0 0 60px #f0f, 0 0 70px #f0f;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+    }
+}
+
+/* Typewriter Animation */
+.line-1 {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinkTextCursor {
+    from { border-right-color: rgba(255, 255, 255, 0.75); }
+    to { border-right-color: transparent; }
+}
